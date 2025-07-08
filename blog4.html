@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top 10 Universities in Tashkent</title>
+  <link rel="stylesheet" href="blog-style.css" />
+</head>
+<body>
+  <div id="sidebar">
+    <div class="sidebar-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contacts.html">Contact</a>
+    </div>
+  </div>
+
+  <button id="hamburger" onclick="toggleSidebar()">☰</button>
+  <div id="overlay" onclick="toggleSidebar()"></div>
+    <div class="blog-container">
+        <h1>Best Books for Students (That Actually Change Your Life)</h1>
+        <p class="blog-date">July 8, 2025</p>
+      
+        <p>
+          Tired of boring school books? Here are 4 books every student should read — not for grades, but for growth.
+        </p>
+      
+        <h2>1. “Atomic Habits” by James Clear</h2>
+        <p>Learn how small daily habits build massive success. Game changer for time management & consistency.</p>
+      
+        <h2>2. “Deep Work” by Cal Newport</h2>
+        <p>Focus like a beast. This book teaches how to remove distractions and work with laser attention.</p>
+      
+        <h2>3. “The 7 Habits of Highly Effective People” by Stephen Covey</h2>
+        <p>Classic. Teaches discipline, vision, and how to live with strong values.</p>
+      
+        <h2>4. “Can’t Hurt Me” by David Goggins</h2>
+        <p>Hardcore mindset boost. Teaches mental toughness through real struggle.</p>
+      
+        <h2>Final Tip</h2>
+        <p>
+          Read 15 minutes daily. Just 1 page can spark an idea that changes your future. Start today, not someday.
+        </p>
+      
+        <div class="back-link">
+          <a href="index.html">← Back to Home</a>
+        </div>
+      </div>
+    <script>
+        function toggleSidebar() {
+          const sidebar = document.getElementById("sidebar");
+          const overlay = document.getElementById("overlay");
+          sidebar.classList.toggle("active");
+          overlay.style.display = sidebar.classList.contains("active") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

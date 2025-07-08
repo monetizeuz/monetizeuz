@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – UFQ Education</title>
+  <link rel="stylesheet" href="blog-style.css" />
+</head>
+<body>
+  <!-- Sidebar + Hamburger + Overlay -->
+  <div id="sidebar">
+    <div class="sidebar-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contacts.html">Contact</a>
+    </div>
+  </div>
+  
+
+  <button id="hamburger" onclick="toggleSidebar()">☰</button>
+  <div id="overlay" onclick="toggleSidebar()"></div>
+
+  <!-- Main content -->
+  <div class="blog-container">
+    <h1>About UFQ Education</h1>
+    <p class="blog-date">Updated: July 8, 2025</p>
+
+    <p>
+      <strong>UFQ Education</strong> is an independent educational platform built with one mission: to uplift students across Uzbekistan and Central Asia through free, honest, and motivating educational content.
+    </p>
+
+    <h2>Who We Are</h2>
+    <p>
+      UFQ is run by passionate students, learners, and future leaders — just like you. We believe education is the foundation of success, and every student deserves guidance that’s clear, real, and empowering.
+    </p>
+
+    <h2>🎯 Our Mission</h2>
+    <p>
+      - Make education accessible and inspiring  
+      - Share stories that motivate youth  
+      - Connect students to global opportunities  
+      - Keep things simple, powerful, and pure
+    </p>
+
+    <h2>💬 Why We Exist</h2>
+    <p>
+      Because we know the struggle: no mentors, no direction, no motivation. UFQ was created to change that — with blogs, guides, interviews, and real talk. Whether you’re trying to win scholarships, learn better, or just keep going — we’re here for you.
+    </p>
+
+    <h2>What “UFQ” Stands For</h2>
+    <p>
+      <strong>UFQ = Ustozlar, Future, Qadr.</strong><br />
+      It’s about Teachers, Future, and Value — honoring those who guide us, building the future, and respecting what matters.
+    </p>
+
+    <h2>💡 Our Dream</h2>
+    <p>
+      To see every young Muslim and student rise with confidence, knowledge, and faith — and build a better Ummah through learning.
+    </p>
+
+    <blockquote style="margin-top: 30px; color: #58a6ff;">
+      “Education is not a privilege. It is your right. Claim it. Master it. Share it.”
+    </blockquote>
+
+    <div class="back-link">
+      <a href="index.html">← Back to Home</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+      sidebar.classList.toggle("active");
+      overlay.style.display = sidebar.classList.contains("active") ? "block" : "none";
+    }
+  </script>
+</body>
+</html>

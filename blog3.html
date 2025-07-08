@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interviews with Ivy-League Students</title>
+  <link rel="stylesheet" href="blog-style.css" />
+</head>
+<body>
+  <div id="sidebar">
+    <div class="sidebar-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contacts.html">Contact</a>
+    </div>
+  </div>
+
+  <button id="hamburger" onclick="toggleSidebar()">☰</button>
+  <div id="overlay" onclick="toggleSidebar()"></div>
+    <div class="blog-container">
+        <h1>Interviews with Students Who Won Scholarships to Ivy-League Universities</h1>
+        <p class="blog-date">July 8, 2025</p>
+      
+        <p>
+          Getting into an Ivy-League university is a dream. But winning a full scholarship? That’s legendary. We interviewed three brilliant students from Central Asia who made it — and here’s what they had to say.
+        </p>
+      
+        <h2>🎓 Farzona M., Yale University (Class of 2027)</h2>
+        <p><strong>Background:</strong> Tashkent, Uzbekistan | Major: Political Science | Scholarship: Full Need-Based Aid</p>
+        <p><strong>Q:</strong> What do you think helped you get accepted?</p>
+        <p><strong>A:</strong> I focused on my story. I come from a small town and started a girls' debate club. My essays were honest and showed how much I care about women’s rights and education.</p>
+        <p><strong>Q:</strong> Advice for others?</p>
+        <p><strong>A:</strong> Be brave. Don’t try to be perfect. Be real. They want people, not robots.</p>
+      
+        <h2>🎓 Kamron R., Harvard University (Class of 2026)</h2>
+        <p><strong>Background:</strong> Samarkand, Uzbekistan | Major: Computer Science | Scholarship: Full Ride + Summer Research Grant</p>
+        <p><strong>Q:</strong> What was the hardest part of your application?</p>
+        <p><strong>A:</strong> The essays. I rewrote my personal statement 12 times. But it worked — I shared how I built a solar-powered internet hub for my village.</p>
+        <p><strong>Q:</strong> What made you stand out?</p>
+        <p><strong>A:</strong> I showed impact. Small actions, but big meaning. Also, I emailed professors and expressed my passion for AI and ethical tech.</p>
+      
+        <h2>🎓 Laylo S., Princeton University (Class of 2025)</h2>
+        <p><strong>Background:</strong> Bukhara, Uzbekistan | Major: Economics & Public Policy | Scholarship: Full Need-Based Aid</p>
+        <p><strong>Q:</strong> What role did faith play in your journey?</p>
+        <p><strong>A:</strong> A huge one. I made lots of du'a. I kept trusting Allah’s plan, even when things seemed impossible. I studied hard and prayed harder.</p>
+        <p><strong>Q:</strong> Any final thoughts?</p>
+        <p><strong>A:</strong> Don't be afraid to dream big. Use every opportunity you get, even if it’s small. Your future self will thank you.</p>
+      
+        <h2>Conclusion</h2>
+        <p>
+          These students didn't have magic — they had purpose, patience, and passion. If you're reading this, you might be next. Work hard, trust Allah, and take bold steps. You never know what doors may open. InshaAllah, one day you’ll be giving this interview.
+        </p>
+      
+        <div class="back-link">
+          <a href="index.html">← Back to Home</a>
+        </div>
+      </div>
+    <script>
+        function toggleSidebar() {
+          const sidebar = document.getElementById("sidebar");
+          const overlay = document.getElementById("overlay");
+          sidebar.classList.toggle("active");
+          overlay.style.display = sidebar.classList.contains("active") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

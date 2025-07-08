@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – UFQ Education</title>
+  <link rel="stylesheet" href="blog-style.css" />
+</head>
+<body>
+    <div id="sidebar">
+        <div class="sidebar-links">
+          <a href="index.html">Home</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="contacts.html">Contact</a>
+        </div>
+    </div>
+
+  <button id="hamburger" onclick="toggleSidebar()">☰</button>
+  <div id="overlay" onclick="toggleSidebar()"></div>
+
+  <!-- Main content -->
+  <div class="blog-container">
+    <h1>Privacy Policy</h1>
+    <p class="blog-date">Effective Date: July 8, 2025</p>
+
+    <p>
+      UFQ Education respects your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit our website.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+    <p>
+      We may collect basic information like your browser type, IP address, and pages visited. If you voluntarily contact us or subscribe to newsletters, we may store your name and email.
+    </p>
+
+    <h2>2. How We Use Your Information</h2>
+    <p>
+      Your data is used to improve website performance, respond to your messages, and provide better content. We do not sell or rent your personal information to third parties.
+    </p>
+
+    <h2>3. Cookies</h2>
+    <p>
+      We may use cookies to track how users interact with our site. You can disable cookies in your browser settings at any time.
+    </p>
+
+    <h2>4. Third-Party Services</h2>
+    <p>
+      Our site may use third-party services (like Google Analytics or AdSense) which may collect anonymous usage data.
+    </p>
+
+    <h2>5. Your Rights</h2>
+    <p>
+      You have the right to request deletion of your personal data or ask how it’s being used. Contact us at: <strong>ufqeducation@gmail.com</strong>
+    </p>
+
+    <h2>6. Changes to This Policy</h2>
+    <p>
+      We may update this policy at any time. Please review it regularly for changes. Your continued use of our site means you accept these terms.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      If you have any questions, reach out to us at: <strong>ufqeducation@gmail.com</strong>
+    </p>
+
+    <div class="back-link">
+      <a href="index.html">← Back to Home</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+      sidebar.classList.toggle("active");
+      overlay.style.display = sidebar.classList.contains("active") ? "block" : "none";
+    }
+  </script>
+</body>
+</html>

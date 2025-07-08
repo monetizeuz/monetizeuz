@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Lobby – UFQ Education</title>
+  <link rel="stylesheet" href="blog-style.css" />
+  <style>
+    .coming-soon {
+      text-align: center;
+      margin-top: 100px;
+      font-size: 1.2em;
+      color: #8b949e;
+    }
+
+    .coming-soon strong {
+      color: #58a6ff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar + Hamburger + Overlay -->
+  <div id="sidebar">
+    <div class="sidebar-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contacts.html">Contact</a>
+    </div>
+  </div>
+
+  <button id="hamburger" onclick="toggleSidebar()">☰</button>
+  <div id="overlay" onclick="toggleSidebar()"></div>
+
+  <!-- Main Content -->
+  <div class="blog-container">
+    <h1>UFQ Blog Lobby</h1>
+    <p class="blog-date">July 8, 2025</p>
+
+    <div class="coming-soon">
+      <p>This section is currently being built.</p>
+      <p>All articles, categories, and blog archives will appear here soon, InshaAllah.</p>
+      <p>Stay tuned and follow us on <strong>Telegram</strong> or <strong>Instagram</strong> for updates.</p>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Back to Home</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+      sidebar.classList.toggle("active");
+      overlay.style.display = sidebar.classList.contains("active") ? "block" : "none";
+    }
+  </script>
+</body>
+</html>

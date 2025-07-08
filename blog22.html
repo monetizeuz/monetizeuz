@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Motivation</title>
+  <link rel="stylesheet" href="blog-style.css" />
+</head>
+<body>
+  <div id="sidebar">
+    <div class="sidebar-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contacts.html">Contact</a>
+    </div>
+  </div>
+
+  <button id="hamburger" onclick="toggleSidebar()">☰</button>
+  <div id="overlay" onclick="toggleSidebar()"></div>
+    <div class="blog-container">
+        <h1>Need Motivation to Study? Try These Techniques and Study Like a Lion!</h1>
+        <p class="blog-date">July 8, 2025</p>
+      
+        <p>
+          Sometimes you just don’t feel like opening your book. Your brain is tired, your phone is tempting, and your future feels far away. But lions don’t quit — and neither should you. Here are quick motivation boosters to roar your way back into studying.
+        </p>
+      
+        <h2>1. Remind Yourself WHY</h2>
+        <p>Why are you studying? To change your life? To help your family? To make du'a come true? Write it down. Look at it daily.</p>
+      
+        <h2>2. Use the 5-Minute Rule</h2>
+        <p>Tell yourself, “I’ll just study for 5 minutes.” Once you start, momentum builds. Most of the time, you’ll keep going.</p>
+      
+        <h2>3. Watch 1 Motivational Video</h2>
+        <p>Pick 1 video that gets you hyped. Don’t scroll endlessly. Watch, feel the energy, and then immediately start your session.</p>
+      
+        <h2>4. Make Du’a Before Studying</h2>
+        <p>Start with “Rabbi zidni ‘ilma.” Ask Allah for knowledge, focus, and discipline. Barakah flows when you connect first.</p>
+      
+        <h2>5. Change Your Environment</h2>
+        <p>Messy desk = messy brain. Clean your space. Move to a new spot. Sit like a lion — not slouched like a sheep.</p>
+      
+        <h2>6. Use a Timer – Study Like a Warrior</h2>
+        <p>Set a timer for 25–30 minutes. Go hard. Then rest for 5. Repeat. This is called the Pomodoro Technique — and it works.</p>
+      
+        <h2>7. Don’t Wait for Motivation — Build Discipline</h2>
+        <p>Real students don’t rely on mood. They build systems. Set a time, show up daily. Even when it’s boring — especially then.</p>
+      
+        <h2>Conclusion</h2>
+        <p>
+          You’re not weak. You’re just waiting to remember your power. You were created to rise, not to scroll. Now get up, take a breath, say Bismillah, and start. Your future self is waiting.
+        </p>
+      
+        <div class="back-link">
+          <a href="index.html">← Back to Home</a>
+        </div>
+      </div>
+    <script>
+        function toggleSidebar() {
+          const sidebar = document.getElementById("sidebar");
+          const overlay = document.getElementById("overlay");
+          sidebar.classList.toggle("active");
+          overlay.style.display = sidebar.classList.contains("active") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
